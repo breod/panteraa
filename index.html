@@ -1,65 +1,80 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Batman</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login</title>
+
+  <style>
+    *{
+      margin: 10px;
+      padding: 15px;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    body{
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(to bottom, #4d0000, #b30000, #660000);
+    }
+    .container{
+      width: 400px;
+      padding: 40px;
+      border-radius: 30px;
+      background: rgb(120, 0, 0, 0.7);
+      box-shadow: 0 0 20px rgba(0,0,0,0.5);
+      text-align: center;
+    }
+    h1{
+      color: white;
+      margin-bottom: 40px;
+      font-size: 35px;
+    }
+    .input-box{
+      margin-bottom: 20px;
+    }
+    input{
+      width: 100%;
+      padding: 15px;
+      border: none;
+      border-radius: 30px;
+      outline: none;
+      font-size: 16px;
+    }
+    .botoes{
+      margin-top: 30px;
+      display: flex;
+      justify-content: space-between;
+    }
+    button{
+      width: 50%;
+      padding: 15px;
+      border: none;
+      border-radius: 30px;
+      font-size: 18px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    button:hover{
+      transform: scale(1.05);
+    }
+  </style>
 </head>
 <body>
-<style>
-    body{
-        margin: 60px;
-        background-color: rgb(255, 255, 255);
-    }
-    
-    .card1{
-        margin: 60px;
-        border-radius: 10px;
-        background-color: rgb(5, 5, 5);
-        padding-top: 20px;
-        padding-bottom: 20px;
-        padding-left: 20px;
-        padding-right: 20px;
-
-    }
-    .card2{
-        margin: 50px;
-        border-radius: 10px;
-        background-color: rgb(61, 1, 243);
-        padding-top: 15px;
-        padding-bottom: 15px;
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-    .card3{
-        margin: 40px;
-        border-radius: 10px;
-        background-color: rgb(226, 223, 33);
-        padding-top: 10px;
-        padding-bottom: 10px;
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-    .fig{
-        width: 350px;
-        height: 250px;
-        border-radius: 15px;
-    }
-</style>
-
-    <div class="card1">
-    <div class="card2">
-    <div class="card3">
-
-        <img src="batman1.jpg" alt="batman1" class="fig">
-        <img src="batman 2.jpg" alt="batman2" class="fig">
-        <img src="batman 3.jpg" alt="batman3" class="fig">
-        <img src="batman 4.webp" alt="batman4" class="fig">
-        <img src="batman 5.jpg" alt="batman5" class="fig">
-        <img src="batman 6.jpg" alt="batman6" class="fig">
-        <img src="batman 7.webp" alt="batman7" class="fig">
-        <img src="batman 8.jpg"alt="batman8" class="fig">
-        <img src="batman 9.webp"alt="batman9" class="fig">
+  <div class="container">
+    <h1>FAÇA SEU LOGIN</h1>
+    <div class="input-box">
+      <input type="text" placeholder="Login">
     </div>
+    <div class="input-box">
+      <input type="password" placeholder="Senha">
+    </div>
+    <div class="botoes">
+      <button>CADASTRAR</button>
+      <button>LOGAR</button>
+    </div>
+  </div>
 </body>
 </html>
