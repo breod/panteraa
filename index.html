@@ -1,80 +1,130 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Login</title>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Faça seu Cadastro</title>
   <style>
-    *{
-      margin: 10px;
-      padding: 15px;
+    * {
+      margin: 0;
+      padding: 0;
       box-sizing: border-box;
-      font-family: Arial, Helvetica, sans-serif;
+      font-family: Arial, sans-serif;
     }
-    body{
+
+    body {
+      background: linear-gradient(#8B0000, #4A0000);
       height: 100vh;
       display: flex;
-      justify-content: center;
       align-items: center;
-      background: linear-gradient(to bottom, #4d0000, #b30000, #660000);
+      justify-content: center;
+      overflow: hidden;
     }
-    .container{
-      width: 400px;
-      padding: 40px;
-      border-radius: 30px;
-      background: rgb(120, 0, 0, 0.7);
-      box-shadow: 0 0 20px rgba(0,0,0,0.5);
-      text-align: center;
-    }
-    h1{
+
+    .home {
+      position: absolute;
+      top: 25px;
+      left: 30px;
       color: white;
-      margin-bottom: 40px;
-      font-size: 35px;
+      font-weight: bold;
     }
-    .input-box{
-      margin-bottom: 20px;
+
+    .container {
+      background: rgba(139, 0, 0, 0.95);
+      width: 380px;
+      padding: 45px 35px;
+      border-radius: 22px;
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.7);
+      text-align: center;
+      color: white;
     }
-    input{
+
+    h1 {
+      font-size: 28px;
+      margin-bottom: 35px;
+      letter-spacing: 1px;
+    }
+
+    .campo {
+      margin-bottom: 22px;
+      text-align: left;
+    }
+
+    label {
+      margin-bottom: 8px;
+    }
+
+    input {
       width: 100%;
-      padding: 15px;
+      height: 52px;
+      background: #f0f0f0;
+      border-radius: 8px;
       border: none;
-      border-radius: 30px;
-      outline: none;
-      font-size: 16px;
     }
-    .botoes{
-      margin-top: 30px;
+
+    .buttons {
       display: flex;
-      justify-content: space-between;
+      gap: 15px;
+      margin-top: 35px;
     }
-    button{
-      width: 50%;
-      padding: 15px;
+
+    button {
+      flex: 1;
+      padding: 13px;
       border: none;
-      border-radius: 30px;
-      font-size: 18px;
+      border-radius: 50px;
+      font-weight: bold;
       cursor: pointer;
       transition: 0.3s;
     }
-    button:hover{
+
+    button:hover {
       transform: scale(1.05);
+    }
+
+    .cancelar {
+      background: #e0e0e0;
+      color: #333;
+    }
+
+    .cadastrar {
+      background: white;
+      color: #8B0000;
     }
   </style>
 </head>
 <body>
+
+  <div class="home">HOME</div>
+
   <div class="container">
-    <h1>FAÇA SEU LOGIN</h1>
-    <div class="input-box">
-      <input type="text" placeholder="Login">
+    <h1>FAÇA SEU CADASTRO</h1>
+    
+    <div class="campo">
+      <label>Login</label>
+      <input type="text" disabled>
     </div>
-    <div class="input-box">
-      <input type="password" placeholder="Senha">
+
+    <div class="campo">
+      <label>Senha</label>
+      <input type="password" disabled>
     </div>
-    <div class="botoes">
-      <button>CADASTRAR</button>
-      <button>LOGAR</button>
+
+    <div class="campo">
+      <label>Nome</label>
+      <input type="text" disabled>
+    </div>
+
+    <div class="campo">
+      <label>Email</label>
+      <input type="email" disabled>
+    </div>
+
+    <div class="buttons">
+      <button class="cancelar">CANCELAR</button>
+      <button class="cadastrar">CADASTRAR</button>
     </div>
   </div>
+
 </body>
 </html>
